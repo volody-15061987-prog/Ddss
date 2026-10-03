@@ -1,1 +1,128 @@
-
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6eee8">
+  <meta name="description" content="Наращивание ресниц, эстетическая косметология без инъекций, лазерная эпиляция и массаж лица. Познакомьтесь с направлениями ухода и выберите своё.">
+  <title>Пространство красоты — ресницы, уход за лицом и телом</title>
+  <style>
+    :root{--paper:#fcf8f4;--cream:#f4ebe3;--rose:#e8ceca;--ink:#382c29;--muted:#75635d;--accent:#7c494a;--line:#d9c7bd;--serif:Georgia,'Times New Roman',serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65}a{color:inherit;text-decoration:none}button{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button{cursor:pointer}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px}::selection{background:var(--rose)}.wrap{width:min(1240px,calc(100% - 96px));margin:auto}.skip{position:fixed;left:16px;top:-100px;padding:12px;background:var(--paper);z-index:20}.skip:focus{top:12px}
+    header{background:rgba(252,248,244,.97);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}.header-inner{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:2px;line-height:1.6;text-transform:uppercase}.brand-mark{font:38px var(--serif);color:var(--accent)}nav{display:flex;align-items:center;gap:30px;font-size:13px}nav a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:6px}.nav-cta{border:1px solid var(--line);padding:10px 20px;border-radius:30px}.menu-toggle{display:none;background:transparent;border:1px solid var(--line);border-radius:30px;padding:8px 16px;color:var(--ink)}
+    .eyebrow{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);font-weight:600}.hero{display:grid;grid-template-columns:1.08fr 1fr;gap:44px;align-items:center;padding:64px 0 54px}.hero h1{font:clamp(48px,5.4vw,78px)/1.08 var(--serif);font-weight:400;letter-spacing:-2.5px;margin:24px 0}.hero h1 em{color:var(--accent);font-weight:400}.hero-copy>p{max-width:430px;color:var(--muted);font-size:16px}.actions{display:flex;flex-wrap:wrap;gap:20px;align-items:center;margin-top:32px}.button{display:inline-flex;justify-content:center;align-items:center;gap:26px;background:var(--accent);color:#fff;padding:15px 24px;border:1px solid var(--accent);border-radius:40px;font-size:13px;transition:background .2s,transform .2s}.button:hover{background:#603638;transform:translateY(-2px)}.text-link{font-size:13px;border-bottom:1px solid var(--line);padding:8px 0}.hero-note{display:flex;gap:12px;align-items:center;margin-top:44px;font-size:11px;color:var(--muted);letter-spacing:.6px}.hero-note:before{content:'';height:1px;width:36px;background:var(--accent)}.hero-art{position:relative;padding:12px 22px 24px}.portrait{width:100%;height:auto;display:block;border-radius:48% 48% 5px 5px;background:var(--rose)}.art-caption{position:absolute;left:-6px;bottom:54px;padding:17px 25px;background:var(--paper);border:1px solid var(--line);font:italic 22px var(--serif);box-shadow:0 12px 30px #49332809}.art-index{position:absolute;right:0;bottom:2px;font-size:10px;letter-spacing:2px;color:var(--muted)}
+    .ribbon{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.ribbon-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;color:var(--muted);font-size:11px;letter-spacing:1.5px;text-transform:uppercase}.ribbon b{color:var(--accent);font-size:18px;font-weight:400}section{padding:90px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:38px}h2{font:46px/1.15 var(--serif);font-weight:400;letter-spacing:-1px;margin:14px 0 0}.section-head>p{max-width:320px;margin:0;color:var(--muted);font-size:14px}.services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.service{border:1px solid var(--line);padding:25px 23px 22px;border-radius:100px 100px 8px 8px;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}.service:hover{transform:translateY(-5px);box-shadow:0 15px 30px #49332808}.service:nth-child(even){background:#f5eae5}.service-art{height:128px;display:flex;align-items:center;justify-content:center;color:var(--accent)}.service-art svg{width:125px;height:100px;fill:none;stroke:currentColor;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}.service-number{font-size:10px;color:var(--muted);letter-spacing:2px;margin-top:18px}.service h3{font:27px/1.15 var(--serif);font-weight:400;margin:12px 0;min-height:62px}.service p{font-size:13px;color:var(--muted);margin:0 0 24px}.service a{font-size:12px;margin-top:auto;display:flex;justify-content:space-between;padding-top:16px;border-top:1px solid var(--line)}
+    .philosophy{background:var(--cream)}.philosophy-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:100px;align-items:center}.quote{font:42px/1.24 var(--serif);font-weight:400;margin:24px 0}.quote em{color:var(--accent)}.small-copy{font-size:14px;color:var(--muted);max-width:360px}.principle{display:grid;grid-template-columns:34px 1fr;gap:18px;padding:23px 0;border-bottom:1px solid var(--line)}.principle:first-child{padding-top:0}.principle span{font:italic 20px var(--serif);color:var(--accent)}.principle h3{font-size:15px;font-weight:500;margin:0 0 8px}.principle p{font-size:13px;color:var(--muted);margin:0}
+    .guide-layout{display:grid;grid-template-columns:.85fr 1.3fr;gap:70px;align-items:start}.guide-intro p{color:var(--muted);font-size:14px;max-width:350px;margin:24px 0}.choices{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}.choice{border:1px solid var(--line);background:transparent;border-radius:30px;padding:11px 17px;color:var(--ink);font-size:12px}.choice:hover{border-color:var(--accent)}.choice[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:white}.guide-card{background:#f3e5df;border:1px solid var(--line);padding:35px;border-radius:8px;min-height:345px}.guide-card h3{font:32px/1.2 var(--serif);font-weight:400;margin:10px 0 16px}.guide-card p{font-size:14px;color:var(--muted)}.guide-card .detail-label{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);margin-top:25px}.guide-card .detail-note{border-top:1px solid var(--line);padding-top:17px;font-size:12px;margin-bottom:0}.js-only{display:none}.js .js-only{display:flex}
+    .faq-section{padding-top:0}.faq-layout{display:grid;grid-template-columns:.85fr 1.3fr;gap:70px}.faq-list{border-top:1px solid var(--line)}details{border-bottom:1px solid var(--line)}summary{cursor:pointer;font-size:15px;padding:23px 35px 23px 0;position:relative;list-style:none}summary::-webkit-details-marker{display:none}summary:after{content:'+';position:absolute;right:4px;top:18px;color:var(--accent);font:26px var(--serif)}details[open] summary:after{content:'−'}details p{font-size:14px;color:var(--muted);margin:0;padding:0 35px 24px 0}.closing{background:var(--rose);padding:60px 0;text-align:center}.closing h2{font-size:43px;margin:0 0 20px}.closing p{font-size:14px;color:#654d49;margin:0 auto 26px;max-width:460px}.closing .button{background:transparent;color:var(--ink);border-color:#997572}.closing .button:hover{background:var(--paper)}footer{padding:30px 0}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}footer p{font-size:11px;color:var(--muted);max-width:420px;text-align:right;margin:0}
+    @media(min-width:1500px){.hero{padding-top:80px;padding-bottom:70px}}
+    @media(max-width:1050px){.wrap{width:calc(100% - 56px)}nav{gap:20px}.hero{gap:20px}.hero h1{font-size:58px}.services{grid-template-columns:repeat(2,1fr);gap:22px}.service h3{min-height:0}.service{border-radius:70px 70px 8px 8px;padding:25px 30px}.philosophy-grid{gap:50px}.guide-layout,.faq-layout{gap:40px}h2{font-size:40px}}
+    @media(max-width:700px){html{scroll-padding-top:88px}.wrap{width:calc(100% - 40px)}.header-inner{min-height:76px;flex-wrap:wrap;gap:0}.brand{font-size:9px;letter-spacing:1.5px}.brand-mark{font-size:33px}.js .menu-toggle{display:block}nav{width:100%;padding:12px 0 18px;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px}.js nav{display:none}.js nav.is-open{display:flex}.nav-cta{padding:7px 12px}.hero{grid-template-columns:1fr;padding:42px 0 32px;gap:28px}.hero h1{font-size:clamp(43px,10.8vw,68px);letter-spacing:-1.8px;margin:20px 0}.hero-copy>p{font-size:14px;max-width:440px}.hero-note{margin-top:28px}.actions{margin-top:26px}.hero-art{max-width:430px;width:100%;margin:0 auto;padding:12px 24px 20px}.art-caption{left:0;font-size:21px;bottom:38px;padding:13px 20px}.portrait{max-height:470px}.ribbon-inner{display:grid;grid-template-columns:1fr 1fr;font-size:9px;text-align:center;gap:16px;padding:19px 0}.ribbon b{display:none}section{padding:58px 0}.section-head{display:block;margin-bottom:28px}.section-head>p{margin-top:18px;max-width:400px}h2{font-size:36px}.services{gap:12px}.service{padding:18px 16px;border-radius:65px 65px 8px 8px}.service-art{height:94px}.service-art svg{width:96px;height:85px}.service h3{font-size:23px;min-height:54px}.service p{font-size:12px}.service-number{margin-top:8px}.philosophy-grid,.guide-layout,.faq-layout{grid-template-columns:1fr;gap:32px}.quote{font-size:35px}.small-copy{max-width:440px}.guide-intro p{max-width:440px;margin-bottom:0}.guide-card{padding:26px;min-height:0}.choices{gap:7px}.choice{padding:10px 14px}.faq-section{padding-top:6px}.closing{padding:46px 0}.closing h2{font-size:35px}.footer-inner{flex-direction:column;align-items:flex-start;gap:20px}footer p{text-align:left}.eyebrow{font-size:10px;letter-spacing:2px}}
+    @media(max-width:360px){.services{grid-template-columns:1fr}.service h3{min-height:0}.actions{gap:12px}.button{padding:14px 19px}.wrap{width:calc(100% - 32px)}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Перейти к содержимому</a>
+  <header>
+    <div class="wrap header-inner">
+      <a class="brand" href="#main" aria-label="Пространство красоты — в начало"><span class="brand-mark" aria-hidden="true">✳</span><span>Пространство<br>красоты</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Меню</button>
+      <nav id="navigation" aria-label="Основная навигация"><a href="#services">Направления</a><a href="#approach">Подход</a><a href="#faq">Вопросы</a><a class="nav-cta" href="#guide">Выбрать уход <span aria-hidden="true">↗</span></a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="wrap hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Эстетика • уход • внимание к себе</div>
+        <h1>Красота,<br>в которой<br><em>вы — это вы.</em></h1>
+        <p>Выразительный взгляд, ухоженная кожа и время для себя. Маленькие детали, из которых складывается ваше ощущение красоты.</p>
+        <div class="actions"><a class="button" href="#services">Открыть направления <span aria-hidden="true">↗</span></a><a class="text-link" href="#approach">Познакомиться с подходом</a></div>
+        <div class="hero-note">Бережно к вам. Внимательно к деталям.</div>
+      </div>
+      <div class="hero-art">
+        <svg class="portrait" viewBox="0 0 520 600" role="img" aria-labelledby="portrait-title">
+          <title id="portrait-title">Декоративная иллюстрация женского профиля в розово-бежевых тонах</title>
+          <defs><linearGradient id="back" x2="1" y2="1"><stop stop-color="#e9d4ca"/><stop offset="1" stop-color="#bd8985"/></linearGradient><linearGradient id="skin" x2=".8" y2="1"><stop stop-color="#f7e9db"/><stop offset=".55" stop-color="#e5bfb0"/><stop offset="1" stop-color="#bc8380"/></linearGradient><linearGradient id="silk" x2="1" y2=".5"><stop stop-color="#c39088"/><stop offset=".5" stop-color="#f0d8c7"/><stop offset="1" stop-color="#d2a497"/></linearGradient><radialGradient id="glow"><stop stop-color="#fff8ec" stop-opacity=".65"/><stop offset="1" stop-color="#fff8ec" stop-opacity="0"/></radialGradient></defs>
+          <path fill="url(#back)" d="M0 0h520v600H0z"/><circle cx="130" cy="160" r="260" fill="url(#glow)"/>
+          <ellipse cx="277" cy="272" rx="188" ry="222" fill="none" stroke="#fff8ed" stroke-opacity=".45"/>
+          <path d="M53 600c10-82 40-130 112-161 46-20 57-36 62-74l91-18c-6 51 4 81 47 113 48 36 99 71 119 140" fill="url(#skin)"/>
+          <path d="M237 365c46 15 69-1 82-23-4 41-12 69-36 79-20 6-39-16-46-56" fill="#ad7670" opacity=".22"/>
+          <path d="M176 134c40-48 133-54 174 5 22 32 20 67 17 93-1 16 15 38 26 49 8 9 1 18-18 20-5 10 0 18-6 23-4 4-15 3-17 10 0 13-7 27-25 32-43 13-83-17-107-50-36-48-71-145-44-182" fill="url(#skin)"/>
+          <path d="M343 219c-16-6-34-6-49 0m49 22c-14 10-28 8-40 1m30 5 4 6m-13-4 1 6m-11-6-2 5" fill="none" stroke="#76534e" stroke-width="2.1" stroke-linecap="round"/>
+          <path d="M355 321c8 0 15-1 19-4m-19 4c6 4 10 4 14 3" fill="none" stroke="#a06565" stroke-width="2" stroke-linecap="round"/>
+          <path d="M206 332c-25-29-38-53-35-84 9-7 23-1 32 16l12 9c-2-29-8-56-1-77 6-25 23-40 40-60 28 34 59 47 111 45-8-77-63-107-121-94-93-5-143 91-116 176 16 51 42 72 78 69" fill="#78534a"/>
+          <path d="M144 235c-16-77 28-131 84-134m-69 146c-14-67 24-126 78-139m-58 136c-13-45 11-90 45-113" fill="none" stroke="#c79882" stroke-opacity=".4" stroke-width="2"/>
+          <path d="M185 271c-11-16-20-11-17 3 1 12 8 21 17 22" fill="none" stroke="#b78678" stroke-width="2"/>
+          <ellipse cx="193" cy="310" rx="9" ry="14" fill="none" stroke="#f9e8c5" stroke-width="3"/>
+          <path d="M0 578c39-74 76-98 134-121 17 65 64 99 129 92 56-7 87-45 102-89 88 45 135 81 155 140H0" fill="url(#silk)"/>
+          <path d="M97 482c36 79 120 115 196 80m86-89c-14 56-43 91-85 110" fill="none" stroke="#fff1df" stroke-width="2" stroke-opacity=".5"/>
+          <path d="M424 79v28m-14-14h28" stroke="#fff6e7" stroke-width="1"/><circle cx="78" cy="349" r="3" fill="#fff6e7"/>
+        </svg>
+        <div class="art-caption">Искусство быть собой</div><span class="art-index" aria-hidden="true">КРАСОТА В ДЕТАЛЯХ / 01</span>
+      </div>
+    </div>
+    <div class="ribbon"><div class="wrap ribbon-inner"><span>Наращивание ресниц</span><b aria-hidden="true">✳</b><span>Косметология без инъекций</span><b aria-hidden="true">✳</b><span>Лазерная эпиляция</span><b aria-hidden="true">✳</b><span>Массаж лица</span></div></div>
+    <section id="services"><div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">01 / Направления</div><h2>Ваше время для красоты</h2></div><p>Четыре направления ухода.<br>Выберите то, что откликается именно вам.</p></div>
+      <div class="services">
+        <article class="service"><div class="service-art" aria-hidden="true"><svg viewBox="0 0 130 100"><path d="M15 53Q65 16 115 53Q65 87 15 53Z"/><path d="M15 53Q65 74 115 53M25 39l-7-12m22 3-4-14m20 8V9m19 15 3-15m12 22 7-13m6 23 10-10"/><path d="M51 45a16 16 0 1 0 28 0"/><circle cx="65" cy="53" r="5"/></svg></div><span class="service-number">01 / ВЗГЛЯД</span><h3>Наращивание<br>ресниц</h3><p>Деликатный акцент или выразительный объём — образ начинается с вашего настроения.</p><a href="#guide" data-service="lashes">Узнать больше <span aria-hidden="true">↗</span></a></article>
+        <article class="service"><div class="service-art" aria-hidden="true"><svg viewBox="0 0 130 100"><path d="M40 24c0-22 49-22 49 0v23c0 23-15 39-25 39S40 70 40 47ZM47 43q7 6 13 0m10 0q7 6 13 0M65 45l-4 15h8m-14 10q10 6 19 0M32 24V12m-6 6h12m58 53v16m-8-8h16"/></svg></div><span class="service-number">02 / СИЯНИЕ</span><h3>Эстетическая<br>косметология</h3><p>Уход за лицом без инъекций: очищение, маски и пилинги с учётом потребностей кожи.</p><a href="#guide" data-service="skin">Узнать больше <span aria-hidden="true">↗</span></a></article>
+        <article class="service"><div class="service-art" aria-hidden="true"><svg viewBox="0 0 130 100"><path d="m70 15 25 18-16 23-25-18ZM57 42 44 61l15 10 14-20M45 72l-9 14m16-9-2 14m-12-25-14 6M100 60v22m-11-11h22"/><path d="M14 94q36-7 62 0t40-2"/></svg></div><span class="service-number">03 / ГЛАДКОСТЬ</span><h3>Лазерная<br>эпиляция</h3><p>Уход за гладкостью кожи. Зоны, возможность процедуры и план курса обсуждаются индивидуально.</p><a href="#guide" data-service="laser">Узнать больше <span aria-hidden="true">↗</span></a></article>
+        <article class="service"><div class="service-art" aria-hidden="true"><svg viewBox="0 0 130 100"><path d="M44 19c5-13 36-13 42 0v26c0 23-14 38-21 38S44 68 44 45ZM51 41q5 4 10 0m10 0q5 4 10 0m-24 25q8 4 16 0M24 90l-5-35q0-9 6-7l8 23-2-31q1-9 7-3l8 35 9 18m52 0 5-35q0-9-6-7l-8 23 2-31q-1-9-7-3l-8 35-9 18"/></svg></div><span class="service-number">04 / ГАРМОНИЯ</span><h3>Массаж<br>лица</h3><p>Время замедлиться и уделить внимание себе. Мягкое дополнение к привычному уходу.</p><a href="#guide" data-service="massage">Узнать больше <span aria-hidden="true">↗</span></a></article>
+      </div>
+    </div></section>
+    <section class="philosophy" id="approach"><div class="wrap philosophy-grid"><div><div class="eyebrow">02 / Философия ухода</div><h2 class="quote">Не менять себя.<br>А с удовольствием<br><em>быть собой.</em></h2><p class="small-copy">Красота не требует чужих стандартов. Важнее то, как вы чувствуете себя — и что нравится вам в собственном отражении.</p></div><div>
+      <div class="principle"><span>01</span><div><h3>В центре — ваши пожелания</h3><p>Естественный эффект или яркий акцент: выбор начинается с вашего представления о красоте.</p></div></div>
+      <div class="principle"><span>02</span><div><h3>Осознанный выбор ухода</h3><p>Перед процедурой важно обсудить особенности кожи, чувствительность, ограничения и ожидаемый результат.</p></div></div>
+      <div class="principle"><span>03</span><div><h3>Внимание к деталям</h3><p>От выбранного эффекта до домашнего ухода — небольшие детали делают заботу о себе продуманной.</p></div></div>
+    </div></div></section>
+    <section id="guide"><div class="wrap guide-layout"><div class="guide-intro"><div class="eyebrow">03 / С чего начать</div><h2>Что хочется<br>подчеркнуть?</h2><p>Познакомьтесь с направлениями поближе. Здесь — ориентиры для выбора и темы, которые стоит обсудить перед процедурой.</p></div><div>
+      <div class="choices js-only" role="group" aria-label="Выберите направление"><button class="choice" type="button" data-choice="lashes" aria-pressed="true" aria-controls="guide-result">Взгляд</button><button class="choice" type="button" data-choice="skin" aria-pressed="false" aria-controls="guide-result">Уход за кожей</button><button class="choice" type="button" data-choice="laser" aria-pressed="false" aria-controls="guide-result">Гладкость</button><button class="choice" type="button" data-choice="massage" aria-pressed="false" aria-controls="guide-result">Расслабление</button></div>
+      <div class="guide-card" id="guide-result" aria-live="polite" aria-atomic="true"><div class="eyebrow" id="guide-kicker">Выразительность в деталях</div><h3 id="guide-title">Наращивание ресниц</h3><p id="guide-copy">Подчеркнуть форму глаз и добавить взгляду выразительности. Желаемые длина, изгиб и объём обсуждаются с учётом состояния натуральных ресниц.</p><p class="detail-label">Что обсудить перед процедурой</p><p id="guide-discuss">Какой эффект вам нравится, был ли опыт наращивания и возникала ли чувствительность к материалам.</p><p class="detail-note">Направление ухода не заменяет индивидуальную консультацию. Возможность процедуры и ограничения уточняются заранее.</p></div>
+      <noscript><p>Другие направления описаны в разделе «Направления». Для переключения подробностей включите JavaScript.</p></noscript>
+    </div></div></section>
+    <section class="faq-section" id="faq"><div class="wrap faq-layout"><div><div class="eyebrow">04 / Полезно знать</div><h2>Перед первым<br>визитом</h2></div><div class="faq-list">
+      <details><summary>Как выбрать направление ухода?</summary><p>Начните с того, что хочется подчеркнуть: взгляд, состояние кожи или её гладкость. Посмотрите описания выше, а конкретную процедуру выбирайте после обсуждения ваших пожеланий и возможных ограничений.</p></details>
+      <details><summary>Косметология — это инъекции?</summary><p>На этой странице представлена эстетическая косметология без инъекций: очищение, маски, пилинги и уход за кожей лица. Конкретный уход подбирается индивидуально.</p></details>
+      <details><summary>Что нужно уточнить до процедуры?</summary><p>Сообщите о чувствительности, аллергических реакциях, принимаемых препаратах и недавних процедурах. Обсудите противопоказания, подготовку, длительность и последующий уход. При необходимости потребуется консультация врача.</p></details>
+      <details><summary>Где посмотреть стоимость и записаться?</summary><p>Прайс и контакты для записи пока не опубликованы. Они появятся после уточнения информации. На этой странице можно познакомиться с направлениями и выбрать интересующий уход.</p></details>
+    </div></div></section>
+    <section class="closing"><div class="wrap"><div class="eyebrow" style="margin-bottom:18px">Маленький ритуал. Особенное ощущение.</div><h2>Оставьте время для себя.</h2><p>Иногда забота о себе начинается с простого желания — почувствовать себя немного лучше.</p><a class="button" href="#guide">Выбрать своё направление <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><a class="brand" href="#main"><span class="brand-mark" aria-hidden="true">✳</span><span>Пространство<br>красоты</span></a><p>Ресницы · Эстетическая косметология · Лазерная эпиляция · Массаж лица<br>У процедур есть противопоказания. Необходима консультация специалиста.</p></div></footer>
+  <script>
+    (() => {
+      'use strict';
+      const directions = {
+        lashes: ['Выразительность в деталях', 'Наращивание ресниц', 'Подчеркнуть форму глаз и добавить взгляду выразительности. Желаемые длина, изгиб и объём обсуждаются с учётом состояния натуральных ресниц.', 'Какой эффект вам нравится, был ли опыт наращивания и возникала ли чувствительность к материалам.'],
+        skin: ['Знакомство с вашей кожей', 'Эстетическая косметология', 'Уход за лицом без инъекций: очищение, маски и пилинги. Выбор процедуры зависит от текущего состояния кожи, её чувствительности и ваших пожеланий.', 'Ваш привычный домашний уход, чувствительность кожи, недавние процедуры и то, что хочется изменить в уходе.'],
+        laser: ['Внимание к гладкости', 'Лазерная эпиляция', 'Направление для тех, кто хочет сократить нежелательный рост волос. Возможность процедуры, зоны и план курса определяются индивидуально, без обещаний одинакового результата для всех.', 'Особенности кожи и волос, недавний загар, принимаемые препараты, ограничения и правила подготовки.'],
+        massage: ['Пауза в ритме дня', 'Массаж лица', 'Уход, в котором есть место прикосновению и спокойствию. Техника и интенсивность обсуждаются с учётом состояния кожи и вашего комфорта.', 'Чувствительность кожи, недавние косметологические процедуры, возможные ограничения и комфортную интенсивность.']
+      };
+      const fields = ['guide-kicker', 'guide-title', 'guide-copy', 'guide-discuss'].map(id => document.getElementById(id));
+      const choices = document.querySelectorAll('[data-choice]');
+      function selectDirection(key) {
+        if (!Object.prototype.hasOwnProperty.call(directions, key)) return;
+        directions[key].forEach((value, i) => { fields[i].textContent = value; });
+        choices.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.choice === key)));
+      }
+      choices.forEach(button => button.addEventListener('click', () => selectDirection(button.dataset.choice)));
+      document.querySelectorAll('[data-service]').forEach(link => link.addEventListener('click', () => selectDirection(link.dataset.service)));
+      const menu = document.querySelector('.menu-toggle');
+      const navigation = document.getElementById('navigation');
+      function closeMenu() { menu.setAttribute('aria-expanded', 'false'); navigation.classList.remove('is-open'); }
+      menu.addEventListener('click', () => {
+        const open = menu.getAttribute('aria-expanded') !== 'true';
+        menu.setAttribute('aria-expanded', String(open)); navigation.classList.toggle('is-open', open);
+      });
+      navigation.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') { closeMenu(); menu.focus(); }
+      });
+      window.matchMedia('(min-width: 701px)').addEventListener('change', closeMenu);
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+</body>
+</html>
